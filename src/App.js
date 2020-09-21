@@ -24,11 +24,14 @@ class App extends React.Component {
             allGuesses: [...prevState.allGuesses, { guess, feedbackColor }],
             attempt: prevState.attempt + 1,
             feedbackMessage,
+            feedbackColor,
             block: absDiff === 0,
         }));
+        
     };
 
     render() {
+        
         const {
             allGuesses,
             feedbackMessage,
@@ -36,7 +39,7 @@ class App extends React.Component {
             attempt,
             feedbackColor,
         } = this.state;
-
+        // console.log(this.state);
         //Creo un array nuevo con la lista de numeros ingresados por la persona
         const guessList = allGuesses.map((item, index) => (
             <li key={index}>

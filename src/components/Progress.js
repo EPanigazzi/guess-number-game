@@ -7,6 +7,9 @@ const Progress = ({ attempt, guessList, feedbackMessage, feedbackColor }) => {
     const Feedback = styled.p`
         text-align: center;
         background-color: ${feedbackColor};
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: 900;
     `  
 
     return (
