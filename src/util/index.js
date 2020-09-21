@@ -15,7 +15,7 @@ export const getFeedback = (absDiff) => {
     let feedbackColor;
 
     if (absDiff === 0) {
-        feedbackColor = "#000";
+        feedbackColor = "#64dd17";
         feedbackMessage = "You Won! Reset the game to play again.";
     } else if (absDiff < 4 && absDiff !== 0) {
         feedbackColor = "#ff5722";
